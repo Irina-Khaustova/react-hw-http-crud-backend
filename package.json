@@ -1,0 +1,22 @@
+{
+  "name": "server-koa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "forever app.js",
+    "watch": "forever -w app.js",
+    "restart": "forever restart app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-body": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.6"
+  },
+  "devDependencies": {
+    "forever": "^4.0.3"
+  }
+}
