@@ -35,6 +35,5 @@ router.delete('/notes/:id', async(ctx, next) => {
 
 app.use(router.routes()).use(router.allowedMethods());
 
-//const port = process.env.PORT || 7777;
 const server = http.createServer(app.callback());
 server.listen(9999, () => console.log('server started'));
